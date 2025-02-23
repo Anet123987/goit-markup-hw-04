@@ -58,9 +58,9 @@ body {
     
 }
 .nav-links a {
-    text-decoration: none; /* Вимикаємо стандартне підкреслення */
-    position: relative; /* Для роботи псевдоелемента */
-    color: #000; /* Колір тексту */
+    text-decoration: none; 
+    position: relative; 
+    color: #000; 
 }
 
 /* Стиль для псевдоелемента підкреслення */
@@ -70,22 +70,22 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px; /* Товщина лінії */
-    background-color: blue; /* Колір лінії */
-    transform: scaleX(0); /* За замовчуванням лінія не показується */
-    transform-origin: bottom right; /* Лінія з'являється з правої частини */
-    transition: transform 0.3s ease; /* Плавний перехід */
+    height: 2px; 
+    background-color: blue; 
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease; 
 }
 
-/* Стиль для активного посилання */
+
 .nav-links a.active::after {
-    transform: scaleX(1); /* Лінія з'являється на активному посиланні */
-    transform-origin: bottom left; /* Лінія розтягується зліва направо */
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
 }
 
-/* Стилі для активних посилань за допомогою класу */
+
 .nav-links a.active {
-    font-weight: bold; /* Можна змінити стиль для активного посилання */
+    font-weight: bold; 
 }
 .logo-link {
     text-decoration: none;
