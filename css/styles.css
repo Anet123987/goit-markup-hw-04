@@ -11,7 +11,9 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
     list-style: none;
   }
-  
+  img {
+    display: block 
+} 
  
   li {
     margin: 0;
@@ -30,17 +32,13 @@ body {
 }
 
 .site_header{
-    width: 1440px;
+   
     height: 72px;
     background-color: #f4f4fd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 156px;
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header_container {
+.header_header {
     width: 1158px;
     height: 72px;
     margin: 0 auto;
@@ -63,9 +61,9 @@ body {
     color: #000; 
 }
 
-/* Стиль для псевдоелемента підкреслення */
+
 .nav-links a::after {
-    content: ''; /* Псевдоелемент без тексту */
+    content: ''; 
     position: absolute;
     left: 0;
     bottom: 0;
@@ -130,7 +128,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    
    
 }
 
@@ -139,17 +137,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+   
 }
 
 .contact-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    align-items: center;
-    justify-content: space-between;
+    margin-right: 40px
 }
-
+.contact-list .contact-item:last-child {
+    
+    margin-right: 0; 
+}
 .email-link,
 .phone-link {
     color: #434455;
@@ -164,9 +164,6 @@ body {
 }
 
 
-.container {
-    
-}
 
 
 .first_section {
@@ -176,14 +173,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    
     max-width: 1440px;
     background-image: url('../images/heroimage.jpg');
     background-color:#2E2F42 ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 1440px;
 height: 600px;
  
 }
@@ -199,11 +195,6 @@ height: 600px;
     margin-bottom: 48px;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .action_button {
     display: block;
@@ -230,13 +221,14 @@ height: 600px;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 0;
-    height: 0;
-    margin: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
     padding: 0;
-    border: none;
-    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    visibility: hidden;
+    overflow: hidden
 }
 
 .second_section {
@@ -248,9 +240,7 @@ height: 600px;
     width: 1128px;
     flex-wrap: wrap;
     justify-content: space-between;
-   
-    margin-left: 156px;
-    margin-right: 156px;
+    margin: 0 auto;
 
 }
 
@@ -299,8 +289,8 @@ height: 600px;
     width: 1440px;
     padding: 120px 0; 
     text-align: center;
- 
-height: 780px;
+    margin: 0 auto;
+
     
 }
 
@@ -321,20 +311,22 @@ height: 780px;
 .team-list {
     list-style: none;
     display: flex;
-   
+    justify-content: space-between;
     gap: 24px;
-   
-    margin-left: 156px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
 }
 
 .team-item {
     background-color: #FFFFFF;
-    display: flex;
+    flex-basis: calc((100% - 72px) / 4); 
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    padding: 0px 0px 32px 0px;
     border-radius: 0 0 4px 4px;
-    width: 264px;
+    max-width: 264px;
     height: 428px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease; /* Плавний перехід для зміни тіні */
@@ -343,14 +335,6 @@ height: 780px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Тінь, яка з'являється при ховері */
 }
 
-.team-member-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    padding:  0 
-}
 
 .team-member-img {
     
@@ -358,6 +342,7 @@ height: 780px;
     object-position: center;
     width: 264px;
 height: 260px;
+display: block;
   
 }
 
@@ -368,9 +353,8 @@ height: 260px;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-top: 8px;
-    margin-bottom: 8px 
+    text-align: center;
 }
-
 .team-item-description {
     font-size: 16px;
     line-height: 1.5;
@@ -395,26 +379,19 @@ fill: none;
 
 
 .fourth_section {
-    background-color: white ;
-    width: 1128px;
-    height: 1000px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    background-color: #ffff;
     width: 100%;
-    padding: 0 16px;
+    padding-top: 120px;
+     padding-bottom: 120px;
     border: 1px solid #e7e9fc; 
     border-top: none;
-  margin-left: 156px;
-  margin-right: 156px;
+
 }
 
-.container_fourth_section {
-    width: 1128px;
-    margin-top: 120px;
-    padding: 0 16px;
-    background-color: white;
+.container{
+   margin: 0 auto; 
+    padding: 0 16px; 
 }
-
 .fourth_section_heading {
     font-family: "Roboto", sans-serif;
     font-size: 36px;
@@ -439,22 +416,68 @@ fill: none;
 .portfolio-item {
     position: relative;
     width: calc((100% - 48px) / 3);
-    height: 420px;
-    overflow: hidden;
+    overflow: hidden; 
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+.portfolio-item:nth-child(n+4) {
+    margin-bottom: 0; 
 }
 
+.portfolio-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc; 
+    border-top: none;
+    width: 360px;
+    height: 120px;
+}
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0; 
+}
+
+.portfolio-item:nth-child(n+4) {
+    margin-bottom: 0; 
+}
+
+.portfolio-heading,
+.portfolio-paragraph {
+    width: 100%;
+}
 .portfolio-image-container {
     position: relative;
     width: 100%;
     height: 100%;
 }
-
+.portfolio_paragraph {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+}
+.portfolio_heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
+}
 .portfolio-item img {
-    width: 360px;
-    height: 300px;
-    object-fit: cover;
+    
     transition: transform 0.3s ease;
-   
+    max-width: 100%; 
+    height: auto;
+
 }
 
 .portfolio-info {
@@ -535,7 +558,7 @@ transform: translateY(100%);
     color: #4d5ae5; 
     display: inline-block; 
     margin-bottom: 16px; 
-    margin-left: 156px;
+   
 }
 
 .logo_studio {
@@ -553,7 +576,7 @@ transform: translateY(100%);
     letter-spacing: 0.02em;
     color: #f4f4fd; 
     max-width: 264px; 
-    margin-left: 156px;
+   
 }
 
 
