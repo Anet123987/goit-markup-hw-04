@@ -262,6 +262,11 @@ body {
     width: 264px;
     border:1px solid #8e8f99;
 }
+.icon-icon {
+    fill: #f4f4fd;  
+  }
+  
+
 
 .cards_list {
     list-style: none;
@@ -316,7 +321,7 @@ body {
     gap:24px;
     
 }
-.icon-icon-ins{
+.icon-icon{
     width :40px;
      height : 40px;  
     
@@ -471,7 +476,7 @@ fill: none;
     justify-content: center;
     flex-direction: column;
     gap: 24px;
-    
+    box-shadow :250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .portfolio-item:nth-child(n+4) {
     margin-bottom: 0; 
