@@ -592,10 +592,12 @@ transform: translateY(100%);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: baseline 
 }
 
-.content-fo {
+.content-f {
     max-width: 60%;
+    margin-right: 120px 
 }
 
 .footer_logo {
@@ -622,6 +624,7 @@ transform: translateY(100%);
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+    line-height: 1.5
 }
 
 .social {
@@ -637,6 +640,8 @@ transform: translateY(100%);
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .social-icons {
