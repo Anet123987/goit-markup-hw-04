@@ -134,7 +134,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    font-style: normal;
    
 }
 
@@ -190,7 +190,7 @@ body {
 }
 
 .section_title {
-    font-family: "Roboto", sans-serif;
+    
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -212,7 +212,6 @@ body {
     background-color: var(--main-button-color, #4d5ae5);
     border-radius: 4px;
     cursor: pointer;
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 15px;
     line-height: 1.5;
@@ -267,6 +266,7 @@ body {
 }
 .icon-icon {
     fill: #f4f4fd;  
+    
   }
   
 
@@ -282,17 +282,17 @@ body {
 
 .card_item {
    
-    display: flex;
+   
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 20px;
+    
     width: calc((100% - 72px) / 4)
     
 }
 
 .list_item_heading {
-    font-family: "Raleway", sans-serif;
+    
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -302,7 +302,7 @@ body {
 }
 
 .list_item_paragraph {
-    font-family: "Roboto", sans-serif;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -313,7 +313,7 @@ body {
     background-color: #F4F4FD;
     padding: 120px 0;
     text-align: center;
-    margin: 0 ;
+    margin: 0 auto;
     max-width: 1440px;
 
     
@@ -321,7 +321,7 @@ body {
 .team ul {
     display: flex;
     justify-content: center;
-    gap:24px;
+   
     
 }
 .icon-icon{
@@ -381,10 +381,10 @@ body {
     max-width: 264px;
     height: 428px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); ;
-    transition: box-shadow 0.3s ease; /* Плавний перехід для зміни тіні */
+    transition: box-shadow 0.3s ease; 
 }
 .team-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Тінь, яка з'являється при ховері */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -505,7 +505,7 @@ fill: none;
     overflow: hidden;
 }
 .portfolio_paragraph {
-    font-family: "Roboto", sans-serif;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -513,7 +513,7 @@ fill: none;
     text-align: center;
 }
 .portfolio_heading {
-    font-family: "Roboto", sans-serif;
+    
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -618,7 +618,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_paragraph {
-    font-family: "Roboto", sans-serif;
+  
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -638,7 +638,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .soc {
     color: #fff;
-    font-family: "Raleway", sans-serif;
+    
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 16px;
@@ -649,13 +649,15 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .social-icons {
     display: flex;
     gap: 16px;
+   
 }
 
-.social-icon-item {
+.icon-icon-f {
     width: 40px;
     height: 40px;
+    fill: currentColor;
 }
-
+ 
 .social-link {
     display: flex;
     align-items: center;
@@ -667,9 +669,9 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
+.social-link:hover ,
 .social-link:focus {
-    background-color: #31d0aa;
+    background-color: #31d0aa !important;
 }
 
 .icon {
