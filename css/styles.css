@@ -264,11 +264,7 @@ body {
     width: 264px;
     border:1px solid #8e8f99;
 }
-.icon-icon {
-    fill: #f4f4fd;  
-    
-  }
-  
+
 
 
 .cards_list {
@@ -325,9 +321,10 @@ body {
     
 }
 .icon-icon{
-    width :40px;
-     height : 40px;  
-    
+    width :32px;
+     height : 32px;  
+     fill: #f4f4fd;  
+    align-items: center; 
 }
 .team a {
     width :100%;
@@ -646,16 +643,20 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.02em;
 }
 
-.social-icons {
+.social-icons{
     display: flex;
     gap: 16px;
-   
+    justify-content: center;
+    align-items: center;
+  
 }
 
 .icon-icon-f {
     width: 40px;
     height: 40px;
     fill: currentColor;
+
+  
 }
  
 .social-link {
@@ -667,10 +668,11 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #4d5ae5;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
-.social-link:hover ,
-.social-link:focus {
+footer .social-link:hover ,
+footer .social-link:focus {
     background-color: #31d0aa !important;
 }
 
